@@ -50,24 +50,31 @@ More detail document for the React-Hook-Form: https://github.com/react-hook-form
 
     For example, in the `Name input`, We use ref={register()} to make validation check system.
     (required and maxLenght)
-    Also we can add error message using <p></p> for the each validation check type. 
+
+
+    Also we can add error message using a `<p></p>` for the each validation check type. 
 
 4. How can we compare the password validation?
+
     We can use `useRef()` & `watch`
+
     By `useRef()` we can set the  password as a ref object with a `.current` property
+
     (More info about the useRef(): https://reactjs.org/docs/hooks-reference.html#useref)
 
-    in the password.current assing the password value which was entered in the password label
+    In the password.current assing the password value which was entered in the password label
     ```
     const password = useRef();
     password.current = watch("password");
     ```
     *watch("input_name") saves the user's input in the "input_name" field*
 
-    with this `password.crruent` we can check the validation password and password_confirm input data
+    With this `password.crruent` we can check the validation password and password_confirm input data
 
 ### Reference Video: https://www.youtube.com/watch?v=nF4vw3efUwY
 
 Happy Coding :)
+
 Author: Jaehyeon Robert Han
+
 Update Date: 2020-12-17
